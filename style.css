@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  width: 100%;
+  min-height: 100vh;
+  padding: 50px 100px;
+  background: url(./images/olivie.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+h1 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.info {
+  font-size: 14px;
+  letter-spacing: -0.8;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.products__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.product__item {
+  width: 50%;
+}
+
+.product__item:nth-child(even) {
+  display: grid;
+  justify-content: right;
+}
+
+.layout {
+  width: 400px;
+  height: 100px;
+  margin-bottom: 40px;
+  box-shadow: 3px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.product__item:nth-child(even) .layout {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.layout__text {
+  vertical-align: center;
+  width: 70%;
+  height: 100%;
+  display: inline-block;
+}
+
+.product__img {
+  display: inline-block;
+  width: 100px;
+  height: auto;
+  vertical-align: middle;
+}
+
+.product__img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 230px;
+}
+
+button {
+  display: grid;
+  place-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid lightgreen;
+  border-radius: 50%;
+  background: transparent;
+  font-size: 25px;
+  cursor: pointer;
+  line-height: 40px;
+}
+
+p {
+  font-size: 20px;
+}
+
+span {
+  padding-right: 10px;
+}
+
+.counter {
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.total {
+  position: absolute;
+  bottom: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}

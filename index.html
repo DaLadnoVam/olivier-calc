@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Olivier Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Калькулятор Новорічного Олів'є</h1>
+      <p class="info">* середня вага порції - 428г</p>
+      <div class="container">
+        <ul class="products__list">
+          <li class="product__item">
+            <div class="layout">
+              <div class="layout__text">
+                <h2 class="product__name">Горошок (консервований)</h2>
+                <h3 class="product__weight" id="peas">40г</h3>
+              </div>
+              <div class="product__img">
+                <img src="./images/green-peas.png" alt="green peas" />
+              </div>
+            </div>
+          </li>
+          <li class="product__item">
+            <div class="layout">
+              <div class="layout__text">
+                <h2 class="product__name">Колбаса "Лікарська"</h2>
+                <h3 class="product__weight" id="sausage">75г</h3>
+              </div>
+              <div class="product__img">
+                <img src="./images/meat.png" alt="sausage" />
+              </div>
+            </div>
+          </li>
+          <li class="product__item">
+            <div class="layout">
+              <div class="layout__text">
+                <h2 class="product__name">Варені яйця</h2>
+                <h3 class="product__weight" id="egg">45г</h3>
+              </div>
+              <div class="product__img">
+                <img src="./images/eggs.png" alt="eggs" />
+              </div>
+            </div>
+          </li>
+          <li class="product__item">
+            <div class="layout">
+              <div class="layout__text">
+                <h2 class="product__name">Відварна картопля</h2>
+                <h3 class="product__weight" id="potato">125г</h3>
+              </div>
+              <div class="product__img">
+                <img src="./images/potattoes.png" alt="potattoes" />
+              </div>
+            </div>
+          </li>
+          <li class="product__item">
+            <div class="layout">
+              <div class="layout__text">
+                <h2 class="product__name">Відварна морква</h2>
+                <h3 class="product__weight" id="carrot">20г</h3>
+              </div>
+              <div class="product__img">
+                <img src="./images/carrots.png" alt="carrots" />
+              </div>
+            </div>
+          </li>
+          <li class="product__item">
+            <div class="layout">
+              <div class="layout__text">
+                <h2 class="product__name">Ріпчаста цибуля</h2>
+                <h3 class="product__weight" id="onion">30г</h3>
+              </div>
+              <div class="product__img">
+                <img src="./images/onions.png" alt="onion" />
+              </div>
+            </div>
+          </li>
+          <li class="product__item">
+            <div class="layout">
+              <div class="layout__text">
+                <h2 class="product__name">Солені огірки</h2>
+                <h3 class="product__weight" id="cucumber">75г</h3>
+              </div>
+              <div class="product__img">
+                <img src="./images/cucumbers.png" alt="cucumbers" />
+              </div>
+            </div>
+          </li>
+          <li class="product__item">
+            <div class="layout">
+              <div class="layout__text">
+                <h2 class="product__name">Майонез</h2>
+                <h3 class="product__weight" id="mayonnaise">18мл</h3>
+              </div>
+              <div class="product__img">
+                <img src="./images/mayonez.png" alt="mayonez" />
+              </div>
+            </div>
+          </li>
+          <li class="product__item">
+            <div class="layout">
+              <div class="layout__text">
+                <h2 class="product__name">Сіль, перець</h2>
+                <h3 class="product__weight">На смак</h3>
+              </div>
+              <div class="product__img">
+                <img src="./images/solt.png" alt="solt and pepper" />
+              </div>
+            </div>
+          </li>
+          <li class="product__item">
+            <div class="layout">
+              <div class="layout__text">
+                <h2 class="product__name">Зелень</h2>
+                <h3 class="product__weight">Для Декору</h3>
+              </div>
+              <div class="product__img">
+                <img src="./images/salat.png" alt="salat" />
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="counter">
+      <button class="decrement">-</button>
+      <p><span class="quantity-person">4</span>порцій</p>
+      <button class="increment">+</button>
+    </div>
+    <h2 class="total">
+      Загальна вага: <span id="total-weight">1.712</span> кг
+    </h2>
+
+    <script src="app.js"></script>
+  </body>
+</html>
